@@ -12,9 +12,9 @@ def test_curso_serializer():
     request = factory.get('/')  # Cria uma requisição GET fictícia
     serializer = CursoSerializer(curso, context={'request': request}) # Adiciona o contexto da requisição
     data = serializer.data
-    assert data['titulo'] == "Vue.js para Iniciantes"
-    assert data['descricao'] == "Aprenda Vue.js do zero."
-    assert data['slug'] == "vuejs-iniciantes"
+    assert data['titulo'] == "Vue para Iniciantes"
+    assert data['descricao'] == "Aprenda Vue do zero."
+    assert data['slug'] == "vue-iniciantes"
     assert 'url' in data
     assert 'order' in data
 
