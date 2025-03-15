@@ -64,6 +64,9 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+    preview: {
+    allowedHosts: ['frontend'], // Adicionando o host "frontend" à lista de hosts permitidos
+  },
   css: {
     preprocessorOptions: {
       sass: {
