@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "django-vue"
+version = "0.1.0"
+description = ""
+authors = ["gustavodsantos <gustavojuniordos@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1.7"
+python-decouple = "^3.8"
+dj-database-url = "^2.3.0"
+psycopg2 = "^2.9.10"
+django-min-custom-user = "^0.2.0"
+django-extensions = "^3.2.3"
+ipython = "^9.0.2"
+djangorestframework = "^3.15.2"
+django-ordered-model = "^3.7.4"
+gunicorn = "^23.0.0"
+django-cors-headers = "^4.7.0"
+markdown = "^3.7"
+django-filter = "^25.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-django = "^4.10.0"
+pytest-cov = "^6.0.0"
+ruff = "^0.11.0"
+taskipy = "^1.14.1"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "djavue.settings"
+python_files = ["test_*.py", "*_test.py", "testing/python/*.py"]
+
+[tool.ruff]
+line-length = 120
+exclude = ['./djavue/cursos/migrations', '.venv', '.pgdata', 'static']
+
+[tool.ruff.lint]
+select = ['I', 'F', 'E', 'W', 'PL', 'PT']
+ignore = ["PLR2004"]
+
+[tool.ruff.format]
+quote-style = 'single'
+
+[tool.taskipy.tasks]
+lint = 'ruff check . && ruff check . --diff'
+format = 'ruff check . --fix && ruff format .'
+run = 'python manage.py runserver'
+
+pre_test = 'task lint'
+test = 'pytest djavue/ -s -x --cov=djavue -vv'
+post_test = 'coverage html'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
