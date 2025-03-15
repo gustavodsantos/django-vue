@@ -34,9 +34,9 @@ AUTH_USER_MODEL = 'cursos.User'
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='', cast=Csv())
 
+CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS', default='', cast=Csv())
 
 # Application definition
-
 INSTALLED_APPS = [
     'djavue.cursos',
     'corsheaders',
@@ -62,38 +62,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# Configurações do CORS
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4173",  # Frontend local
-    "http://frontend:4173",   # Frontend na rede Docker
-    "https://seusite.com",    # Domínio de produção
-]
-
 # Permitir credenciais (cookies, autenticação)
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_CREDENTIALS = config('CORS_ALLOW_CREDENTIALS', default=True, cast=bool)
 
-# Métodos HTTP permitidos
-CORS_ALLOW_METHODS = [
-    'GET',
-    'POST',
-    'PUT',
-    'PATCH',
-    'DELETE',
-    'OPTIONS',
-]
+# Configurações do CORS
+CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS', cast=Csv())
 
-# Cabeçalhos permitidos
-CORS_ALLOW_HEADERS = [
-    'accept',
-    'accept-encoding',
-    'authorization',
-    'content-type',
-    'dnt',
-    'origin',
-    'user-agent',
-    'x-csrftoken',
-    'x-requested-with',
-]
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
