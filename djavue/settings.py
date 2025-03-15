@@ -64,9 +64,36 @@ MIDDLEWARE = [
 
 # Configurações do CORS
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',  # Frontend
+    "http://localhost:4173",  # Frontend local
+    "http://frontend:4173",   # Frontend na rede Docker
+    "https://seusite.com",    # Domínio de produção
 ]
 
+# Permitir credenciais (cookies, autenticação)
+CORS_ALLOW_CREDENTIALS = True
+
+# Métodos HTTP permitidos
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST',
+    'PUT',
+    'PATCH',
+    'DELETE',
+    'OPTIONS',
+]
+
+# Cabeçalhos permitidos
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.

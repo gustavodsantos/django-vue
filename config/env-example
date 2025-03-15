@@ -5,6 +5,6 @@ TIME_ZONE=America/Sao_Paulo
 POSTGRES_DB=postgres
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
-ALLOWED_HOSTS=localhost,127.0.0.1
+ALLOWED_HOSTS=localhost,127.0.0.1,backend
 DOMAIN_NAME=localhost
 DATABASE_URL=postgres://postgres:postgres@localhost:5432/postgres
