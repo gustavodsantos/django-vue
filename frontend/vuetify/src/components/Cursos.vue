@@ -24,7 +24,7 @@ onMounted(async () => {
     <v-main>
       <v-container>
         <v-row v-if="cursos.length > 0">
-          <v-col v-for="curso in cursos" :key="curso.id" class="border rounded-lg" cols="12" md="4">
+          <v-col v-for="curso in cursos" :key="curso.url" class="border rounded-lg" cols="12" md="4">
             <v-card>
               <v-card-title>{{ curso.titulo }}</v-card-title>
               <v-card-text>{{ curso.descricao }}</v-card-text>

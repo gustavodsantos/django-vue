@@ -48,7 +48,7 @@ cd django-vue
 ```
 
 ### 2. Configuração do Ambiente
-Crie um arquivo `.env` na raiz do projeto, use `config/env-example` como exemplo para o arquivo.
+Crie um arquivo `.env` na raiz do projeto, use `env-example` como exemplo para o arquivo.
 
 ### 3. Executando com Docker Compose
 Suba os contêineres do backend, frontend e banco de dados:
@@ -60,6 +60,16 @@ docker-compose up -d --build
 Após a inicialização, o projeto estará disponível em:
 
 * http://localhost
+
+* Em seguida crie um super usuário:
+
+```bash
+docker compose exec backend python manage.py createsuperuser
+```
+O **Adim do Django** estará disponivel em:
+
+* http://localhost/admin
+
     
 ### 4. Executando Localmente (Sem Docker)
 
@@ -108,7 +118,7 @@ poetry run task format  # Formata o código
 Após executar os testes, um relatório de cobertura será gerado em `htmlcov/`. Abra o arquivo `index.html` no navegador para visualizar o relatório.
 
 **CI/CD**
-O projeto está configurado com GitHub Actions para executar testes e linting automaticamente em cada push ou pull request para o branch `main`. 
+O projeto está configurado com GitHub Actions para executar testes e linting automaticamente em cada push ou pull request para a branch `main`. 
 O arquivo de configuração está em `.github/workflows/github_ci.yml.`
 
 **Rotas da API**
