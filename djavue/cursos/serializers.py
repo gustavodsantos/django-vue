@@ -12,4 +12,4 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class CursoSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Curso
-        fields = ['url', 'titulo', 'descricao', 'slug', 'order']
+        fields = ['url', 'titulo', 'descricao', 'order']
