@@ -1,0 +1,52 @@
+JavaScript
+Com duração total de 40 horas, realizando todas as atividades e avaliações necessárias, com aproveitamento superior a 70%.
+A conclusão foi registrada em 5 de março de 2025.
+
+Análise de dados com Excel e Power BI
+Desafio focado em criação de reports para tomadas de decisão finalizado em
+26/12/2024 com uma carga horária total de 19H.
+
+Melhoria de controle e análise de pedidos Aça Tubos
+Projeto em parceria com a empresa Aca Tubos
+finalizado em 23/10/2024 com uma carga horária total de 34H.
+
+Introdução a Modelo de Regressão Linear
+Desafio focado em análise de dados de um e-commerce, cálculo da
+previsibilidade e tomada de ações para melhoria dos resultados finalizado em 06/09/2024 com uma carga
+horária total de 10H.
+
+Django Forms
+Curso complementar do curso "Django" fazendo um aprofundamento sobre criação, edição e manutenção de formulários no Django Framework. Conteúdos: conceitos de protocolo HTPP e formulário HTML, validação Manual de Formulários e transição de form para modelo.
+
+Django
+O curso teve duração de 10 horas, divididas em 107 aulas. Os tópicos abordados incluem entrega contínua, configurações de projeto, arquivos estáticos, uploads de arquivos, migrações, customização de usuário, backup, debug, sentry, landing page, integrações simples, HTTP, templates, fundamentos de banco de dados, testes com bancos de dados, criação de app de módulos, relacionamentos muitos para um, evitando armadilhas do ORM, relacionamentos muitos para muitos, autenticação, autorização e recuperação de senha. O certificado foi emitido pela empresa "DevPro".
+
+Dev Tools - Ferramentas do programador
+Contúdos do curso: comandos básicos do sistema operacional Linux, setup e comandos essenciais do controlador de versão Git e comandos e conceitos fundamentais do Docker.
+
+Pytools
+O curso teve duração de 7 horas, divididas em 64 aulas. Foi concluído em fevereiro de 2024 e abordou tópicos como isolamento de ambiente, gestão de dependências, publicação de pacotes, framework Pytest, Pytest fixtures, injeção de dependências e Pipenv. O certificado foi emitido pela empresa "DevPro".
+
+Python Birds
+O curso teve duração de 7 horas, distribuídas em 68 aulas, e foi concluído em janeiro de 2024. O conteúdo abordou orientação a objetos, containers e iteração, modularização, classe, composição e herança. O certificado foi emitido pela empresa "DevPro".
+
+Python
+Os Módulos 1, 2 e 3 do curso de Python tiveram uma duração total de 120 horas e foram concluídos em novembro de 2023, com um aproveitamento superior a 70% das avaliações. Os códigos dos certificados são: Módulo 1 - 673C7-66E2-4, Módulo 2 - 673C7-67AC-1, Módulo 3 - 673C7-685A-6. Os certificados foram emitidos pela empresa "Curso em Video".
+
+Treinamento DB1 Start
+O Treinamento DB1 Start teve duração de 100 horas e foi finalizado em outubro de 2023, com aproveitamento superior a 70% das avaliações. O conteúdo do curso incluiu agilidade, banco de dados, ciclo de desenvolvimento, classes, estruturas condicionais, estruturas de repetição, funções, IDE, interface, internet, introdução à agilidade, lógica de programação, nuvem, pacotes, preparação do ambiente, segurança da informação, tipos não primitivos, tratamento de exceções, variáveis e console, versionamento. O certificado foi emitido pela empresa "DB1 Group".
+
+MySQL
+O curso de MySQL teve 40 horas de duração e foi concluído em outubro de 2023, com aproveitamento superior a 70% das avaliações. O código do certificado é 673C7-6573-4, emitido pela empresa "Curso em Vídeo".
+
+Algoritmo
+O curso de Algoritmo teve 40 horas de duração e foi concluído em junho de 2023, com aproveitamento superior a 70% das avaliações. O código do certificado é 673C7-6297-5, emitido pela empresa "Curso em Vídeo".
+
+HTML / CSS
+Os Módulos 1, 2, 3 e 4 do curso de HTML5 e CSS3 tiveram uma duração total de 160 horas e foram finalizados em junho de 2023, com um aproveitamento superior a 70%. Os códigos dos certificados são: Módulo 1 - 673C7-C9E9-3, Módulo 2 - 673C7-E776-5, Módulo 3 - 673C7-15678-A, Módulo 4 - 673C7-26CB1-8. Os certificados foram emitidos pela empresa "Curso em Vídeo".
+
+Excel
+O curso "Excel Básico ao Avançado" foi concluído em janeiro de 2023. O código do certificado é 63c2fa4537aaeaafaa0d58fc, emitido pela empresa "DATAB".
+
+Hardware
+O curso de hardware teve duração de 20 horas e foi finalizado em 3 de setembro de 2022, com aproveitamento superior a 70%. O código do certificado é 673C7-6616-2, emitido pela empresa "Curso em Vídeo".

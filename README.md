@@ -61,7 +61,7 @@ Após a inicialização, o projeto estará disponível em:
 
 * http://localhost
 
-* Em seguida crie um super usuário:
+Em seguida crie um super usuário:
 
 ```bash
 docker compose exec backend python manage.py createsuperuser
@@ -73,11 +73,11 @@ O **Adim do Django** estará disponivel em:
     
 ### 4. Executando Localmente (Sem Docker)
 
-**Backend**
+**Backend**  
 Instale as dependências do Poetry:
 
 ```bash
-poetry install
+poetry install --with dev
 ```
 
 Execute as migrações e inicie o servidor:
@@ -87,7 +87,7 @@ poetry run python manage.py migrate
 poetry run python manage.py runserver
 ```
 
-**Frontend**
+**Frontend**  
 Navegue até o diretório do frontend:
 
 ```bash
@@ -105,23 +105,30 @@ Inicie o servidor de desenvolvimento:
 npm run dev
 ```
 
-**Testes e Linting**
+**Importando Cursos**  
+Para importar cursos de um arquivo `cursos_realizados.txt` localizado na raiz do projeto, execute o seguinte comando:
+
+```bash
+poetry run python manage.py import_cursos
+```
+
+**Testes e Linting**  
 O projeto utiliza `pytest` para testes e `ruff` para linting e formatação. Para executar os testes e verificar a qualidade do código:
 
 ```bash
-poetry run task test  # Executa os testes com cobertura
-poetry run task lint  # Verifica o linting
-poetry run task format  # Formata o código
+task test  # Executa os testes com cobertura
+task lint  # Verifica o linting
+task format  # Formata o código
 ```
 
-**Cobertura de Testes**
+**Cobertura de Testes**  
 Após executar os testes, um relatório de cobertura será gerado em `htmlcov/`. Abra o arquivo `index.html` no navegador para visualizar o relatório.
 
-**CI/CD**
+**CI/CD**  
 O projeto está configurado com GitHub Actions para executar testes e linting automaticamente em cada push ou pull request para a branch `main`. 
 O arquivo de configuração está em `.github/workflows/github_ci.yml.`
 
-**Rotas da API**
+**Rotas da API**  
 O backend expõe as seguintes rotas da API:
 
 * Listar Cursos: `GET /api/cursos/`
@@ -132,10 +139,10 @@ O backend expõe as seguintes rotas da API:
 
 * Admin do Django: `GET /admin/`
 
-**Licença**
+**Licença**  
 Este projeto está licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
-**Desenvolvido por**
+**Desenvolvido por**  
 Gustavo Junior dos Santos
 
 * Email: [gustavojuniordos@hotmail.com](mailto:gustavojuniordos@hotmail.com)
@@ -144,5 +151,5 @@ Gustavo Junior dos Santos
 
 * GitHub: [gustavodsantos](https://github.com/gustavodsantos/)
 
-**Contribuições**
+**Contribuições**  
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.

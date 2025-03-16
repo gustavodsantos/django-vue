@@ -12,8 +12,7 @@ class UserAdmin(MinUserAdmin):
 
 @admin.register(Curso)
 class CursoAdmin(OrderedModelAdmin):
-    list_display = ('titulo', 'slug', 'descricao', 'order', 'move_up_down_links')
-    prepopulated_fields = {'slug': ('titulo',)}
+    list_display = ('titulo', 'descricao', 'order', 'move_up_down_links')
     search_fields = ('titulo', 'descricao')
     list_filter = ('titulo',)
     ordering = ['order', 'titulo']
