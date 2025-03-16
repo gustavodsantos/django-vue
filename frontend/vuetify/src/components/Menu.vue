@@ -1,5 +1,4 @@
 <template>
-
   <v-app-bar app color="primary">
     <v-app-bar-title>Menu</v-app-bar-title>
 
@@ -14,21 +13,20 @@
 
       <v-list>
         <v-list-item @click="login">
-          <v-list-item-icon>
+          <template v-slot:prepend>
             <v-icon>mdi-login</v-icon>
-          </v-list-item-icon>
+          </template>
           <v-list-item-title>Login</v-list-item-title>
         </v-list-item>
         <v-list-item @click="register">
-          <v-list-item-icon>
+          <template v-slot:prepend>
             <v-icon>mdi-account-plus</v-icon>
-          </v-list-item-icon>
+          </template>
           <v-list-item-title>Registrar</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
   </v-app-bar>
-
 </template>
 
 <script setup>
