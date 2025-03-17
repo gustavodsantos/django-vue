@@ -1,9 +1,9 @@
 <script setup>
   import { useCursosStore } from '@/stores/cursos';
-  import { onMounted, ref } from 'vue';
+  import { computed, onMounted, ref } from 'vue';
 
   const store = useCursosStore();
-  const { cursos } = store;
+  const cursos = computed(() => store.cursos);
   const loading = ref(true);
   const error = ref(null);
 
@@ -24,7 +24,7 @@ onMounted(async () => {
     <v-main>
       <v-container>
         <v-row v-if="cursos.length > 0">
-          <v-col v-for="curso in cursos" :key="curso.url" class="border rounded-lg" cols="12" md="4">
+          <v-col v-for="curso in cursos" :key="curso.url" cols="12" md="12">
             <v-card>
               <v-card-title>{{ curso.titulo }}</v-card-title>
               <v-card-text>{{ curso.descricao }}</v-card-text>
